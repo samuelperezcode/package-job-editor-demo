@@ -1,20 +1,23 @@
 {
-  "name": "job-editor-lib-demo",
-  "version": "1.0.0",
+  "name": "package-job-editor-demo",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
     "dev": "vitest",
     "test": "vitest --run",
     "lint": "tsc",
-    "ci": "pnpm run lint && pnpm run test && pnpm run build"
-
+    "ci": "pnpm run lint && pnpm run test && pnpm run build",
+    "realease": "pnpm run ci && changeset publish"
   },
   "keywords": [],
   "author": "Samuel Pérez <samuel.perez@ntsprint.com>",
   "license": "MIT",
   "devDependencies": {
+    "@changesets/cli": "^2.27.7",
     "@types/node": "^20.14.12",
     "tsup": "^8.2.3",
     "typescript": "^5.5.4",
