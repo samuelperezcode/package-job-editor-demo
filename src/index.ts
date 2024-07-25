@@ -1,5 +1,3 @@
 export const helloWorld = () => {
-  console.log('Hello World from Library');
+  console.log("Hello World from Library");
 };
-
-
