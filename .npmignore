@@ -6,4 +6,5 @@ tsconfig.json
 .gitignore
 .github
 .changeset
+.nvmrc
 vitest.config.ts
